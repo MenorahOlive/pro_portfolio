@@ -17,6 +17,11 @@ export default {
       boxShadow: {
         boxShadow: '0 4px 4px 0  #0A2428',
     }, 
+      fontFamily: {
+        'helvetica': ['helvetica', 'sans-serif'],
+        'helveticalight': ['helveticalight', 'sans-serif'],
+        'lemonmilk': ['lemonmilk', 'sans-serif'],
+      },
 
     },
   },
