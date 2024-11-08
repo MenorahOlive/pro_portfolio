@@ -16,7 +16,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body >
+	<body class="font-helveticalight">
 		<main>
 			<slot />
 		</main>	
@@ -27,29 +27,29 @@ const { title } = Astro.props;
 	@tailwind components;
 	@tailwind utilities;
 
-	@layer-base{
+	
  	@font-face {
   		font-family: 'helvetica';
-  		src: url('public\fonts\helvetica\Helvetica.ttf') format('ttf');
+  		src: url('/fonts/helvetica/Helvetica.ttf') format('truetype');
 		font-weight: normal;
 		font-style: normal;
-		font-display: swap;
+		
 	}
 	@font-face {
   		font-family: 'helveticalight';
-  		src: url('public\fonts\helvetica\helvetica-light-587ebe5a59211.ttf') format('ttf'); 
+  		src: url('/fonts/helvetica/helvetica-light-587ebe5a59211.ttf') format('truetype'); 
 		font-weight: normal;
 		font-style: normal;
-		font-display: swap;
+		
 	}
 	@font-face {
   		font-family: 'lemonmilk';
-  		src: url('public\fonts\lemon_milk\LemonMilk.otf') format('otf');
+  		src: url('/fonts/lemon_milk/LemonMilk.otf') format('opentype');
 		font-weight: normal;
 		font-style: normal;
-		font-display: swap;
+		
 	}
-	}
+	
 	*{
 		box-sizing: border-box;
 	}
