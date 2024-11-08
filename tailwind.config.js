@@ -6,8 +6,20 @@ export default {
       screens: {
         '3xl': '1920px',
       },
+      colors: {
+        primary: '#0A2529',
+        secondary: '#0F2D31',
+        tertiary: '#F3E9D9', 
+      },
+      zIndex: {
+        max: 9999,
+      },
+      boxShadow: {
+        boxShadow: '0 4px 4px 0  #0A2428',
+    }, 
+
     },
   },
-  plugins: [],
-}
+  plugins: [require('@tailwindcss/typography')],
+};
 
