@@ -1,0 +1,18 @@
+---
+import type { NavLinkProps } from "./Navlinks.astro";
+import Navlinks from "./Navlinks.astro";
+import Image from "astro/components/Image.astro";
+import logo from "#assets/icons/Logo.png";
+
+const links: NavLinkProps[] = [
+  { title: "Home", href: "/" },
+  { title: "Works", href: "/works" },
+  { title: "About", href: "/about" },
+  { title: "Contact", href: "/contact" },
+];
+---
+
+<nav class="fixed top-0 left-0 z-max flex justify-between">
+  <Image src={logo} alt="personal logo" class="" />
+  <div></div>
+</nav>
