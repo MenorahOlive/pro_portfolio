@@ -6,4 +6,8 @@ export interface NavLinkProps {
 const { title, href } = Astro.props as NavLinkProps;
 ---
 
-<a href={href} class="text-tertiary font-helvetica">{title}</a>
+<a
+  href={href}
+  class="text-tertiary font-helvetica hover:text-opacity-80 hover:pb-5"
+  >{title}</a
+>

@@ -1,6 +1,14 @@
 ---
 import Image from "astro/components/Image.astro";
 import heroImage from "#assets/images/hero.png";
+import canva from "#assets/icons/canva.png";
+import affinity from "#assets/icons/afinnity-designer.png";
+import css from "#assets/icons/css.png";
+import figma from "#assets/icons/figma.png";
+import html from "#assets/icons/html.png";
+import javascript from "#assets/icons/JS.png";
+import react from "#assets/icons/react.png";
+import tailwind from "#assets/icons/tailwind.png";
 ---
 
 <section
@@ -11,11 +19,34 @@ import heroImage from "#assets/images/hero.png";
     backgroundPosition: "center",
   }}
 >
-  <div>
-    <span>Olive </span>
-    <span>Menorah</span>
-  </div>
-  <div>
-    <span>f</span>
+  <div
+    class="w-full h-screen flex items-center justify-end flex-col gap-14 pb-32"
+  >
+    <div class="flex items-end justify-center gap-32">
+      <h2
+        class="flex flex-col font-lemonmilk text-tertiary font-medium text-7xl"
+      >
+        <span>Olive </span>
+        <span>Menorah</span>
+      </h2>
+      <p class="flex flex-col font-helvetica text-tertiary text-xl">
+        <span>UI/UX Designer</span>
+        <span>Frontend Developer</span>
+      </p>
+      <button
+        class="border-2 rounded-3xl border-tertiary border-opacity-40 px-6 py-2 bg-tertiary bg-opacity-15 hover:bg-primary hover:bg-opacity-15 hover:border-opacity-100"
+        type="button">Connect Now</button
+      >
+    </div>
+    <div class="flex justify-center gap-20">
+      <Image src={javascript} alt="personal logo" class="w-12 h-12" />
+      <Image src={figma} alt="personal logo" class="w-12 h-12" />
+      <Image src={canva} alt="personal logo" class="w-12 h-12" />
+      <Image src={affinity} alt="personal logo" class="w-12 h-12" />
+      <Image src={react} alt="personal logo" class="w-12 h-12" />
+      <Image src={html} alt="personal logo" class="w-12 h-12" />
+      <Image src={css} alt="personal logo" class="w-12 h-12" />
+      <Image src={tailwind} alt="personal logo" class="w-12 h-12" />
+    </div>
   </div>
 </section>
