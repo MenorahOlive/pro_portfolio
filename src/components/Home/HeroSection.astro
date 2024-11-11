@@ -20,33 +20,159 @@ import tailwind from "#assets/icons/tailwind.png";
   }}
 >
   <div
-    class="w-full h-screen flex items-center justify-end flex-col gap-14 pb-32"
+    class="w-full h-screen flex items-center justify-end flex-col gap-14 pb-20 md:pb-32"
   >
-    <div class="flex items-end justify-center gap-32">
+    <div
+      class="flex flex-col lg:flex-row items-center lg:items-end justify-center gap-5 md:gap-8 lg:gap-32"
+    >
       <h2
-        class="flex flex-col font-lemonmilk text-tertiary font-medium text-7xl"
+        class="flex flex-col text-center lg:text-left font-lemonmilk text-tertiary font-medium text-3xl md:text-5xl lg:text-7xl 3xl:text-8xl"
       >
         <span>Olive </span>
         <span>Menorah</span>
       </h2>
-      <p class="flex flex-col font-helvetica text-tertiary text-xl">
+      <p
+        class="flex flex-col text-center lg:text-left font-helvetica text-tertiary text-md md:text-xl 3xl:text-3xl"
+      >
         <span>UI/UX Designer</span>
         <span>Frontend Developer</span>
       </p>
       <button
-        class="border-2 rounded-3xl border-tertiary border-opacity-40 px-6 py-2 bg-tertiary bg-opacity-15 hover:bg-primary hover:bg-opacity-15 hover:border-opacity-100"
+        class="text-center text-md md:text-xl 3xl:text-2xl border-2 rounded-3xl border-tertiary border-opacity-40 px-4 md:px-6 py-0 md:py-2 bg-tertiary bg-opacity-15 hover:bg-primary hover:bg-opacity-15 hover:border-opacity-100 hover:scale-105"
         type="button">Connect Now</button
       >
     </div>
-    <div class="flex justify-center gap-20">
-      <Image src={javascript} alt="personal logo" class="w-12 h-12" />
-      <Image src={figma} alt="personal logo" class="w-12 h-12" />
-      <Image src={canva} alt="personal logo" class="w-12 h-12" />
-      <Image src={affinity} alt="personal logo" class="w-12 h-12" />
-      <Image src={react} alt="personal logo" class="w-12 h-12" />
-      <Image src={html} alt="personal logo" class="w-12 h-12" />
-      <Image src={css} alt="personal logo" class="w-12 h-12" />
-      <Image src={tailwind} alt="personal logo" class="w-12 h-12" />
+    <div class="flex justify-center gap-5 lg:gap-20 flex-wrap lg:flex-nowrap">
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <Image
+          src={javascript}
+          alt="javascript"
+          class="w-10 h-10 md:w-12 md:h-12 3xl:w-16 3xl:h-16 hover:scale-110"
+        />
+        <p
+          id="javascript"
+          class="font-lemonmilk text-xs lg:text-sm text-tertiary animated-slide"
+        >
+          javascript
+        </p>
+      </div>
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <Image
+          src={figma}
+          alt="figma"
+          class="w-10 h-10 md:w-12 md:h-12 3xl:w-16 3xl:h-16 hover:scale-110"
+        />
+        <p
+          class="font-lemonmilk text-xs lg:text-sm text-tertiary animated-slide"
+          style="animation-delay: 5s;"
+        >
+          figma
+        </p>
+      </div>
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <Image
+          src={canva}
+          alt="canva"
+          class="w-10 h-10 md:w-12 md:h-12 3xl:w-16 3xl:h-16 hover:scale-110"
+        />
+        <p
+          class="font-lemonmilk text-xs lg:text-sm text-tertiary animated-slide"
+          style="animation-delay: 10s;"
+        >
+          canva
+        </p>
+      </div>
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <Image
+          src={affinity}
+          alt="affinity"
+          class="w-10 h-10 md:w-12 md:h-12 3xl:w-16 3xl:h-16 hover:scale-110"
+        />
+        <p
+          class="font-lemonmilk text-xs lg:text-sm text-tertiary animated-slide"
+          style="animation-delay: 15s;"
+        >
+          affinity
+        </p>
+      </div>
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <Image
+          src={react}
+          alt="react"
+          class="w-10 h-10 md:w-12 md:h-12 3xl:w-16 3xl:h-16 hover:scale-110"
+        />
+        <p
+          class="font-lemonmilk text-xs lg:text-sm text-tertiary animated-slide"
+          style="animation-delay: 20s;"
+        >
+          react
+        </p>
+      </div>
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <Image
+          src={html}
+          alt="html"
+          class="w-10 h-10 md:w-12 md:h-12 3xl:w-16 3xl:h-16 hover:scale-110"
+        />
+        <p
+          class="font-lemonmilk text-xs lg:text-sm text-tertiary animated-slide"
+          style="animation-delay: 25s;"
+        >
+          html
+        </p>
+      </div>
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <Image
+          src={css}
+          alt="css"
+          class="w-10 h-10 md:w-12 md:h-12 3xl:w-16 3xl:h-16 hover:scale-110"
+        />
+        <p
+          class="font-lemonmilk text-xs lg:text-sm text-tertiary animated-slide"
+          style="animation-delay: 30s;"
+        >
+          css
+        </p>
+      </div>
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <Image
+          src={tailwind}
+          alt="tailwind"
+          class="w-10 h-10 md:w-12 md:h-12 3xl:w-16 3xl:h-16 hover:scale-110"
+        />
+        <p
+          class="font-lemonmilk text-xs lg:text-sm text-tertiary animated-slide"
+          style="animation-delay: 35s;"
+        >
+          tailwind
+        </p>
+      </div>
     </div>
   </div>
 </section>
+
+<style>
+  .animated-slide {
+    opacity: 0;
+    animation: slideInOut 5s ease-in-out 1;
+  }
+
+  @keyframes slideInOut {
+    0% {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    80% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+  }
+</style>
